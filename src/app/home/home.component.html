@@ -1,7 +1,7 @@
 <img src="landing-page.png" alt="Hero Image" class="w-full h-auto rounded-lg shadow-lg">
 
-<div class="container mx-auto px-4 py-6">
-    <h1 class="text-center mb-5 uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">School of Computing</h1>
+<div class="container mx-auto px-[100px] py-6">
+    <h1 class="text-center mb-10 uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-Oswald my-3">School of Computing</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="h-96">
@@ -12,16 +12,16 @@
         </div>
     </div>
 
-    <h3 class="mb-2 pt-6 uppercase text-4xl font-semibold">Program Description</h3>
+    <h3 class="mb-4 pt-10 uppercase text-4xl font-semibold font-Oswald">Program Description</h3>
     <p class="mt-6 text-2xl text-justify leading-relaxed">
         The <span class="font-semibold" style="color: #ff9900">School of Computing</span> aims to support the needs of the industry in the varying fields of software development in mobile, web, game, and desktop applications as well as to produce competent graduates who can develop innovative computing solutions by analyzing processes, algorithms, big data, network communications, cybersecurity, and business analytics. It aims to produce expert animators, multimedia practitioners, network professionals, programmers, data analysts, and cybersecurity professionals.
     </p>
 
-    <h2 class="mb-2 py-6 text-center uppercase text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Linkages <span style="color: #ff9900">/</span> Partners</h2>
+    <h2 class="mb-2 pt-14 text-center uppercase text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-Oswald">Linkages <span style="color: #ff9900">/</span> Partners</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10">
 
-        <div *ngFor="let item of partners" class="flex flex-col items-center text-center">
+        <div *ngFor="let item of partners" class="flex flex-col items-center text-center my-4">
             <img [src]="item.logo" alt="" class="w-28 h-28 rounded-full shadow-md">
             <p class="mt-4 text-lg font-medium text-gray-700 uppercase">{{ item.fullname }} <span class="font-semibold">{{ item.abbrv }}</span></p>
         </div>
