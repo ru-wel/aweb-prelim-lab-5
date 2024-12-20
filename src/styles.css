@@ -12,3 +12,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+.active {
+    color: #ff9900;
+    font-weight: 700;
+}
