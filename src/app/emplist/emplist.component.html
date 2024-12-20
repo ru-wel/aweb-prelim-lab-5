@@ -1,1 +1,22 @@
-
+<div class="container mx-auto px-4 py-6">
+    <h1 class="text-center font-Oswald mb-5 uppercase font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Our Employees</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div *ngFor="let item of employees" class="bg-white rounded-lg shadow-md p-6 text-center">
+        <img [src]="item.pic" [alt]="item.fullname" class="w-full h-max object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-gray-800">{{ item.fullname }}</h3>
+        <p class="text-gray-600">{{ item.position }}</p>
+        <p class="text-[#ff9900] hover:underline">{{ item.email }}</p>
+        <button 
+            type="button"
+            class="text-white bg-[#B7B7B7] font-bold rounded-none text-sm sm:text-md lg:text-lg px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-4 border uppercase transition-all duration-200 hover:bg-[#ff9900] hover:text-white my-2"
+            (click)="showdetails()">
+            Show Other Details
+        </button>
+        <div *ngIf="isShown">
+            <p class="text-gray-600"><span class="font-semibold">Gender:</span> {{ item.gender }}</p>
+            <p class="text-gray-600"><span class="font-semibold">Employment Status:</span> {{ item.status }}</p>
+            <p class="text-gray-600"><span class="font-semibold">Salary:</span> {{ item.salary }}</p>
+        </div>
+      </div>
+    </div>
+</div>
